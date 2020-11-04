@@ -8,11 +8,12 @@
   $(document).ready(function() {
    $("#div1").hide();  
    $("#div2").hide();  
-   $("#div3").hide();  
+   $("#div3").hide();
+   $("#div4").hide();    
      $("#button1").click(function() {      
       $("#div1").toggle(1000);  
       $("#button1").hide();  
-       return true;
+       return false;
      });
      $("#button2").click(function() {      
       $("#div2").fadeIn(1000); 
@@ -22,6 +23,11 @@
      $("#button3").click(function() {      
       $("#div3").toggle(1000); 
       $("#button3").hide();    
+       return false;
+     });
+    $("#button4").click(function() {      
+      $("#div4").toggle(1000);  
+      $("#button4").hide();  
        return false;
      });
   });
@@ -37,7 +43,7 @@
  </style>
 </head>
 <body bgcolor="#844200" style="margin: 50px">
- <h1><center>淺談「Café Racer」與「DGR紳士路騎」<center></center></center></h1>
+ <h1><center>淺談「Café Racer」<center></center></center></h1>
  <h2><b>Café Racer的由來</b></h2><h2>
 
  <p></p></h2><h3>「Café Racer」究竟是什麼？是一種車輛風格？一種Life Style？為何這個起源於二戰後的Café Racer至今仍然相當風行，就連台灣國內也不例外，小至野狼，大至紅牌重機，皆都爭先的改裝出屬於自己的Café Racer，而Café Racer跟紳士路騎Distinguished Gentlemen Ride又有什麼關連？</h3><p></p>
@@ -53,7 +59,9 @@
  <button id="button3">ACE CAFE LONDON</button>
  <div id="div3" style=""><img src="http://img.carstuff.com.tw/images/stories/2016/PiersYu/9/0921/cr/020.jpg"></div>
  <h3>一群騎著摩托車的年輕人聚在一起還能幹嘛？互相競速飆車絕對是年輕人不分年代的喜好，因此Café Racer在當時其實是政府相當頭痛的人物，甚至比擬現在的「屁孩」也一點都不為過，這群熱愛速度的年輕騎士們皆追求著同一個目標，那就是成為「Ton Up Boy」。</h3>
-<h3>Ton Up是一個英國當地的俚語，意旨100英哩的速度，換算成時速約為160km/h，而成功的騎摩托車達到160km/h便能夠成為Ton Up Boy，或許這個目標在現在來看很可笑，但要想在當時就連性能跑車的極速恐怕只有200km/h的年代，成功的以一部兩個輪子的交通工具衝上160km/h就足以成為當地的「車神」，不管有沒有活著回來…。</h3>
+<button id="button4">Top Up Boy</button>
+ <div id="div4" style=""><img src="http://img.carstuff.com.tw/images/stories/2016/PiersYu/9/0921/cr/009.jpg"></div>
+  <h3>Ton Up是一個英國當地的俚語，意旨100英哩的速度，換算成時速約為160km/h，而成功的騎摩托車達到160km/h便能夠成為Ton Up Boy，或許這個目標在現在來看很可笑，但要想在當時就連性能跑車的極速恐怕只有200km/h的年代，成功的以一部兩個輪子的交通工具衝上160km/h就足以成為當地的「車神」，不管有沒有活著回來…。</h3>
  
   <p></p>
     <p></p>
@@ -74,7 +82,7 @@
 
 <style type="text/css">
  .picture{
-  border-radius: 55px; 
+  border-radius: 30px; 
  }
 </style></body></html>
 
